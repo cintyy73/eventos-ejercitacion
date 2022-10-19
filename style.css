@@ -1,0 +1,156 @@
+#pregunta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+div.cont-pregunta{
+    width:200px;
+    text-align:center;
+    font-size: x-large;
+    background-color: lightsalmon;
+    padding: 20px;
+
+}
+.cont-pregunta p{
+    background-color: lightcoral;
+    padding: 25px;
+
+}
+
+#pregunta button:hover{
+
+    background-color: cadetblue;
+
+}
+
+#contador{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 35px;
+}
+.trueClass{
+    background-color:green;
+}
+.falseClass{
+    background-color:red;
+
+}
+#paleta {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+#paleta div.container{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 5px solid rgb(42, 55, 28);
+
+}
+#paleta div.container button{
+    width: 100px;
+    height: 100px;
+    border: 5px solid lawngreen;
+    padding: 20px;
+    margin: 20px;
+}
+
+.blue{
+    background-color:blue;
+}
+
+.red{
+    background-color:red;
+
+}
+.orange{
+    background-color:orange;
+
+}
+
+.yellow{
+    background-color:yellow;
+
+}
+
+.pink{
+    background-color:pink;
+
+}
+
+.black{
+    background-color:black;
+
+}
+
+/* ************** */
+
+#email ul li{
+    font-weight: bold;
+
+}
+
+.leido{
+    font-weight: normal;
+    color: gray;
+}
+
+/***********/
+
+#progreso div.contProgreso{
+    width: 1000px;
+    height: 200px;
+    border: 4px solid black;
+    background-color: pink;
+
+}
+
+#progreso div.contProgreso .progreso{
+    
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+
+
+}
+
+#progreso .btn-prog {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+
+}
+
+#progreso .btn-prog button{
+    width: 200px;
+    height: 100px;
+    border: 4px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin: 40px ;
+}
+
+#progreso .btn-prog .btn-menosDiezP:hover{
+    background-color: rgb(217, 32, 32);
+}
+
+#progreso .btn-prog .btn-masDiezP:hover{
+    background-color: rgb(133, 207, 23);
+}
+
+.modoOscuro{
+    background-color:black;
+    color:rgb(249, 249, 248)
+}
