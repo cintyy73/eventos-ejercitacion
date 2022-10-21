@@ -1,4 +1,4 @@
-const $ =(selector)=>document.querySelector(selector);
+const $ = (selector) => document.querySelector(selector);
 
 /*Ejercicios
 playlist
@@ -36,78 +36,78 @@ const btnMas10 = $('.btn-masDiez');
 const btnMenos10 = $('.btn-menosDiez');
 
 
-const suma1 = (num) => num+1;
-const suma5 = (numberX) => numberX+5;
-const suma10 = (numberX) => numberX+10;
-const resta1 = (numberX) => numberX-1;
-const resta5 = (numberX) => numberX-5;
-const resta10 = (numberX) => numberX-10;
+const suma1 = (num) => num + 1;
+const suma5 = (numberX) => numberX + 5;
+const suma10 = (numberX) => numberX + 10;
+const resta1 = (numberX) => numberX - 1;
+const resta5 = (numberX) => numberX - 5;
+const resta10 = (numberX) => numberX - 10;
 
-btnMas1.addEventListener("click", ()=>{
-    x.innerHTML=suma1(Number(x.innerText))
+btnMas1.addEventListener("click", () => {
+    x.innerHTML = suma1(Number(x.innerText))
 })
 
-btnMas5.addEventListener("click", ()=>{
-    x.innerHTML=suma5(Number(x.innerText));
+btnMas5.addEventListener("click", () => {
+    x.innerHTML = suma5(Number(x.innerText));
 })
 
-btnMas10.addEventListener("click", ()=>{
-    x.innerHTML=suma10(Number(x.innerText))
+btnMas10.addEventListener("click", () => {
+    x.innerHTML = suma10(Number(x.innerText))
 })
 
-btnMenos1.addEventListener("click", ()=>{
-    x.innerHTML=resta1(Number(x.innerText))
+btnMenos1.addEventListener("click", () => {
+    x.innerHTML = resta1(Number(x.innerText))
 })
 
-btnMenos5.addEventListener("click", ()=>{
-    x.innerHTML=resta5(Number(x.innerText))
+btnMenos5.addEventListener("click", () => {
+    x.innerHTML = resta5(Number(x.innerText))
 })
 
-btnMenos10.addEventListener("click", ()=>{
-    x.innerHTML=resta10(Number(x.innerText))
+btnMenos10.addEventListener("click", () => {
+    x.innerHTML = resta10(Number(x.innerText))
 })
 
 /*
 //solo suma una vez al numero inicial 
 
 /*adivinanza
-Crear un documento html con una adivinanza (o una pregunta) y 3 botones con posibles respuestas. Si se clickea la respuesta correcta, se debe mostrar en el documento un texto que lo indique (por ejemplo: ¡Correcto!) debajo de la adivinanza, y el botón seleccionado debe ponerse con un color de fondo verde. Si se clickea una respuesta incorrecta, se debe mostrar en el documento un texto que lo indique (por ejemplo: ¡Le erraste!) y mostrar el botón con la respuesta correcta con un color de fondo verde y los otros dos con un color de fondo rojo.*/ 
+Crear un documento html con una adivinanza (o una pregunta) y 3 botones con posibles respuestas. Si se clickea la respuesta correcta, se debe mostrar en el documento un texto que lo indique (por ejemplo: ¡Correcto!) debajo de la adivinanza, y el botón seleccionado debe ponerse con un color de fondo verde. Si se clickea una respuesta incorrecta, se debe mostrar en el documento un texto que lo indique (por ejemplo: ¡Le erraste!) y mostrar el botón con la respuesta correcta con un color de fondo verde y los otros dos con un color de fondo rojo.*/
 
 const cartel = $('.cartel')
-const btn = $('.button') 
+const btn = $('.button')
 const btnT = $('.btnT')
-const btnF1 = $('.btnF1') 
-const btnF2 = $('.btnF2') 
+const btnF1 = $('.btnF1')
+const btnF2 = $('.btnF2')
 
 
 
-btnT.addEventListener("click", ()=>{
+btnT.addEventListener("click", () => {
     btnT.classList.add("trueClass");
     btnF1.classList.add("falseClass");
     btnF2.classList.add("falseClass");
-    cartel.innerHTML=`
+    cartel.innerHTML = `
     <div class="trueClass">
         <h3>Tu sí que sabes!!!</h3>
     </div>`
 })
 
-btnF1.addEventListener("click", ()=>{
+btnF1.addEventListener("click", () => {
     btnT.classList.add("trueClass");
     btnF1.classList.add("falseClass");
     btnF2.classList.add("falseClass");
 
-    cartel.innerHTML=`
+    cartel.innerHTML = `
     <div class="falseClass">
         <h3>Falsoo!!</h3>
     </div>`
 })
 
-btnF2.addEventListener("click", ()=>{
+btnF2.addEventListener("click", () => {
     btnT.classList.add("trueClass");
     btnF1.classList.add("falseClass");
     btnF2.classList.add("falseClass");
 
-    cartel.innerHTML=`
+    cartel.innerHTML = `
     <div class="falseClass">
         <h3>Falsoo!!</h3>
     </div>`
@@ -117,37 +117,31 @@ btnF2.addEventListener("click", ()=>{
 paleta
 Crear un documento html que tenga 6 botones con un color de fondo distinto, y un div cuadrado grande. Cuando se clickea un botón, el div debe cambiar su color de fondo al mismo color de fondo que el del botón clickeado.*/
 
-const container= $('.container')
-const btnBlue= $('.blue')
-const btnRed= $('.red')
-const btnPink= $('.pink')
-const btnOrange= $('.orange')
-const btnYellow= $('.yellow')
-const btnBlack= $('.black')
+const container = $('.container')
+const btnBlue = $('.blue')
+const btnRed = $('.red')
+const btnPink = $('.pink')
+const btnOrange = $('.orange')
+const btnYellow = $('.yellow')
+const btnBlack = $('.black')
 
-btnBlue.addEventListener ("click", ()=>
-{
-    container.style.backgroundColor="blue"
+btnBlue.addEventListener("click", () => {
+    container.style.backgroundColor = "blue"
 })
-btnRed.addEventListener ("click", ()=>
-{
-    container.style.backgroundColor="red"
+btnRed.addEventListener("click", () => {
+    container.style.backgroundColor = "red"
 })
-btnPink.addEventListener ("click", ()=>
-{
-    container.style.backgroundColor="pink"
+btnPink.addEventListener("click", () => {
+    container.style.backgroundColor = "pink"
 })
-btnOrange.addEventListener ("click", ()=>
-{
-    container.style.backgroundColor="orange"
+btnOrange.addEventListener("click", () => {
+    container.style.backgroundColor = "orange"
 })
-btnYellow.addEventListener ("click", ()=>
-{
-    container.style.backgroundColor="yellow"
+btnYellow.addEventListener("click", () => {
+    container.style.backgroundColor = "yellow"
 })
-btnBlack.addEventListener ("click", ()=>
-{
-    container.style.backgroundColor="black"
+btnBlack.addEventListener("click", () => {
+    container.style.backgroundColor = "black"
 })
 
 //si uso toggle pone y saca... si uso add una vez q añade todas quda con la ultima.. cambio style!!!?????*/
@@ -215,21 +209,18 @@ el incremento/decremento es del 10%*/
 const btnMas10P = $('.btn-masDiezP');
 const btnMenos10P = $('.btn-menosDiezP');
 const xP = $('.estadoP');
-const divP = $(".progreso")
+const divP = $(".progreso");
 
 
-btnMenos10P.addEventListener("click", ()=>{
-    xP.innerHTML=resta10(Number(xP.innerText))
-   // let printP = `"${resta10(Number(xP.innerText))}%"`;no!
-   // divP.style.width=????
-     //como poner el valor q se incrementa 
-    //procentaje del width
+btnMenos10P.addEventListener("click", () => {
+    xP.innerHTML = resta10(Number(xP.innerText));
+    divP.style.width = Number(xP.innerText) + "%"
 })
 
 
-btnMas10P.addEventListener("click", ()=>{
-    xP.innerHTML=suma10(Number(xP.innerText))
-    
+btnMas10P.addEventListener("click", () => {
+    xP.innerHTML = suma10(Number(xP.innerText));
+    divP.style.width = Number(xP.innerText) + "%"
 })
 
 
@@ -240,21 +231,19 @@ Crear un documento html con un título, un párrafo y un bótón con un ícono. 
 
 modo oscuro: body con color de fondo negro, texto e ícono con color blanco, ícono de sol
 modo claro: body con color de fondo blanco, texto e ícono con color negro, ícono de luna*/
-const page = $("#modo") 
+const page = $("#modo")
 const btnTema = $(".tema")
 const divBTN = $("btn-modo-cont")
 
-btnTema.addEventListener("click", ()=>{
-    page.classList.toggle("modoOscuro" );
-    if(btnTema.innerText==="🌚 Modo oscuro"){
-        btnTema.innerText="😎 Modo claro" 
+btnTema.addEventListener("click", () => {
+    page.classList.toggle("modoOscuro");
+    if (btnTema.innerText === "🌚 Modo oscuro") {
+        btnTema.innerText = "😎 Modo claro"
     }
     else {
-        btnTema.innerText="🌚 Modo oscuro"
+        btnTema.innerText = "🌚 Modo oscuro"
     }
-        
-    // btnTema.style.display="none"
-    // divBTN.innerHTML=`<button class="tema">🌚Modo claro</button>`
+
 })
 
 /*
@@ -271,49 +260,82 @@ Scroll	Color de fondo
 // const greenBG = $("green.BG");
 // const blueBG = $("blue.BG");
 // const orangeBG = $("orange.BG");
+// const win =$("window")
+// const body = $("body")
 
-// redBG.addEventListener("scroll")  , (=>{
-//     main.style.backgroundColor="red"
-// } 
-// )
-// greenBG.addEventListener("scroll", ()=>{
-//     main.style.backgroundColor="green"
+
+
+
+// win .addEventListener("scroll", ()=>{
+
+//     // const scrollear = ()=>{
+//         if(body.getElement.scrollTop>500 && body.getElement.scrollTop<1000){
+//          body.classList.add("red")
+//         }
+//         else if(body.getElement.scrollTop>1000 && body.getElement.scrollTop<1500){
+//            body.classList.add("green")
+//         }
+//         else if(body.getElement.scrollTop>1500 && body.getElement.scrollTop<2000){
+//            body.classList.add("blue")
+//         }
+//         else if(body.getElement.scrollTop>2000 && body.getElement.scrollTop<2500){
+//             body.classList.add("orange")
+//         }
+//         else{
+//             body.classList.add("pink")
+    
+//         }
+//     }
+
+//)
+// window.addEventListener("scroll", scrollear=>{
+//     scrollear();
+
+//     body.style.backgroundColor="green"
 // })
 
-// blueBG.addEventListener("scroll", ()=>{
-//     main.style.backgroundColor="blue"
+// window.addEventListener("scroll", scrollear=>{
+//     scrollear();
+
+//     body.style.backgroundColor="blue"
 // })
 
-// orangeBG.addEventListener("scroll", ()=>{
-//     main.style.backgroundColor="orange"
-// }) no es lo que pedia el ejercicio
-/*const body = $("body")
+// window.addEventListener("scroll", scrollear=>{
+//     scrollear();
+//     body.style.backgroundColor="orange"
+// }) 
 
 
-const scrollear = ()=>{
-    if(body.getElement.scrollTop>500 && body.getElement.scrollTop<1000){
-     body.classList.add("red")
-    }
-    else if(body.getElement.scrollTop>1000 && body.getElement.scrollTop<1500){
-       body.classList.add("green")
-    }
-    else if(body.getElement.scrollTop>1500 && body.getElement.scrollTop<2000){
-       body.classList.add("blue")
-    }
-    else if(body.getElement.scrollTop>2000 && body.getElement.scrollTop<2500){
-        body.classList.add("orange")
-    }
-    else{
-        body.classList.add("pink")
 
-    }
-}
-scrollear()*/
+
+
 /*
 imagenes
-Crear un documento html con al menos 4 imágenes chicas (100px de alto) y una imagen grande (500px de alto). Cuando se clickean las imágenes chicas, la imagen grande se tiene que actualizar con la misma que la imagen chica clickeada.
+Crear un documento html con al menos 4 imágenes chicas (100px de alto) y una imagen grande (500px de alto). Cuando se clickean las imágenes chicas, la imagen grande se tiene que actualizar con la misma que la imagen chica clickeada.*/
 
-imagenes-2
+const imgA =$(".imgA");
+const imgB =$(".imgB");
+const imgC =$(".imgC");
+const imgD =$(".imgD");
+const gde =$(".gde");
+
+imgA.addEventListener("click", ()=>{
+    gde.innerHTML=`<img  src="./assets/administrador-de-reuniones.png" alt="">`
+})
+imgB.addEventListener("click", ()=>{
+    gde.innerHTML=`<img  src="./assets/buscador-de-peliculas.png" alt="">`
+})
+imgC.addEventListener("click", ()=>{
+    gde.innerHTML=`<img  src="./assets/controlador-de-gastos.png" alt="">`
+})
+imgD.addEventListener("click", ()=>{
+    gde.innerHTML=`<img  src="./assets/generador-de-memes.png" alt="">`
+})
+
+
+
+
+/*imagenes-2
 Repetir el ejercicio anterior, pero en vez de cambiar la imagen grande cuando se clickean las imágenes chicas, hacerlo cuando se pasa el mouse por encima de las imágenes chicas.
 
 peliculas
@@ -349,3 +371,109 @@ Usuario presiona 9
 Usuario presiona 7
 "Adivinaste. Número ingresado: 7"
 El documento también debe tener un botón que diga Reiniciar, que genere un nuevo número y actualice el mensaje para indicarlo (por ejemplo ¡Nueva partida! Presione un número.)*/
+
+const tecla1 = $(".tecla1") 
+const tecla2 = $(".tecla2")
+const tecla3 = $(".tecla3")
+const tecla4 = $(".tecla4")
+const tecla5 = $(".tecla5")
+const tecla6 = $(".tecla6")
+const tecla7 = $(".tecla7")
+const tecla8 = $(".tecla8")
+const tecla9 = $(".tecla9")
+const tecla0 = $(".tecla0")
+const reset = $(".reset")
+const msj =$(".msj")
+
+let opcion = 0
+let random = 0
+const masMenos = () =>{
+    if(opcion<random){
+        msj.innerHTML="El número es mayor!!!!"
+    }
+    else if(opcion>random){
+        msj.innerHTML="El número es menor!!!!"
+    }
+    else if (opcion===random){
+        msj.innerHTML="Adivinaste!!!!  presiona ✅ para comezar"
+    }
+    else {
+        random=Math.round(Math.random()*10*1)
+        msj.innerHTML="Qué número es??"
+    }
+}
+
+tecla1.addEventListener("click", () =>{
+    opcion=1
+    masMenos()
+})
+tecla2.addEventListener("click", ()=>{
+    opcion=2
+    masMenos()
+
+})
+tecla3.addEventListener("click", ()=>{
+    opcion=3
+    masMenos()
+
+})
+tecla4.addEventListener("click", ()=>{
+    opcion=4
+    masMenos()
+
+})
+tecla5.addEventListener("click", ()=>{
+    opcion=5
+    masMenos()
+
+})
+tecla6.addEventListener("click", ()=>{
+    opcion=6
+    masMenos()
+
+})
+tecla7.addEventListener("click", ()=>{
+    opcion=7
+    masMenos()
+
+})
+tecla8.addEventListener("click", ()=>{
+    opcion=8
+    masMenos()
+
+})
+tecla9.addEventListener("click", ()=>{
+    opcion=9
+    masMenos()
+
+})
+tecla0.addEventListener("click", ()=>{
+    opcion=0
+    masMenos()
+
+})
+reset.addEventListener("click", ()=>{
+    opcion="r"
+    masMenos()
+
+})
+// const adivinaste = () =>{
+//     switch (random===opcion) {
+//         case 1 : 
+//         case 2 :
+//         case 3 :
+//         case 4 :
+//         case 5 :
+//         case 6 :
+//         case 7 :
+//         case 8 :
+//         case 9 :
+//         case 0 :
+//         msj.innerHTML="Adivinaste!!!!"
+//         break;
+//         default masMenos()
+//     }
+    
+    
+// }
+

@@ -120,8 +120,11 @@ div.cont-pregunta{
     justify-content: center;
     align-items: center;
     font-size: 40px;
+}
 
-
+.progreso{
+    width:100%;
+    background-color: red;
 }
 
 #progreso .btn-prog {
@@ -152,5 +155,113 @@ div.cont-pregunta{
 
 .modoOscuro{
     background-color:black;
-    color:rgb(249, 249, 248)
+    color:rgb(249, 249, 248);
+}
+
+/********img*****/
+
+section#img{
+    height: 100vh;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 100px;
+}
+
+.cont-peque{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.cont-peque button{
+    background-color: transparent;
+}
+.peque{
+    height: 100px;
+    width:100px;
+    border: 6px double dodgerblue;
+    margin: 50px;    
+}
+.gde{
+    height: 500px;
+    width:500px;
+    border: 8px double rgb(255, 30, 154);
+}
+
+.peque img{
+    height: 100px;
+    width:100px;
+}
+.gde img{
+    height: 500px;
+    width:500px;
+}
+
+
+
+
+/*******adivinar numero************/
+
+section#adivinarNum{
+min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.visor{
+    width: 320px;
+    height: 150px;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: thistle;
+    color: rgb(205, 52, 113);
+    font-size: 30px;
+    
+}
+.cont-adiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    flex-direction: column;
+    border: 8px solid red;
+}
+
+.tabla3-3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+.tabla3-3 button{
+    width: 100px;
+    height: 50px;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    background-color: thistle;
+    color: blue;
+    font-size: 30px;
+}
+.tecla0{
+    width:170px;
+    height: 50px;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    background-color: thistle;
+    color: blue;
+    font-size: 30px;
+}
+
+.reset{
+    text-align: center;
+    border-radius: 50%;
+    width:170px;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    background-color: thistle;
+    color: blue;
+    font-size: 30px;
 }
